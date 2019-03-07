@@ -33,21 +33,27 @@ body {
   overflow: hidden;
   height: 200px;
   width: 200px;
-  margin: auto;
+  margin: 10px;
+  box-shadow: 5px 5px 5px grey;
+  clear: right;
+  border-radius: 100px;
 }
-#gem-image-1 {
+.hover {
+  cursor: pointer;
+}
+#gem1 {
   content: url("../images/Healing_Amethyst_2.jpg");
   float: left;
 }
-#gem-image-2 {
+#gem2 {
   content: url("../images/Blue-Chalcedony-35A-Front.jpg");
   float: left;
 }
-#gem-image-3 {
+#gem3 {
   content: url("../images/flame\ aura.jpg");
   float: left;
 }
-#gem-image-4 {
+#gem4 {
   content: url("../images/natural-opal-stones-australia.jpg");
   float: left;
 }
@@ -59,4 +65,14 @@ body {
   width: 300px;
   height: 100px;
   margin: 50px;
+}
+#start-button {
+  background: url("../images/art-background-blank-951240.jpg");
+  width: 300px;
+  height: 100px;
+  margin: 50px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 200px;
+  float: left;
 }
