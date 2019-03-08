@@ -31,7 +31,7 @@ $(document).ready(function() {
   // Created a crystalValues functions to assign to each of the crystals in the thumb class div.  Then, we create a variable value to call the randomNum generator for the crystals with the arguments 1 to 12.  We get the variable value to assign to the divs by creating an attr data-crystal-value and assigning variable value to it.
   function crystalValues() {
     $(".thumb").each(function() {
-      //.each iterates
+      //.each iterates over the thumbnails and assigning a random number
       var value = randomNum(1, 12);
       // console.log("????");
       // console.log(value);
@@ -56,11 +56,15 @@ $(document).ready(function() {
         $(".wins").text(wins);
         // We assign the userScore back to 0 for both after a win or lose to make sure the total score is reset to start a new game.
         userScore = 0;
+        targetScore = randomNum(19, 120);
+        $("#targetNumber").text(targetScore);
       } else if (userScore >= targetScore) {
         losses++;
         alert("You Lose!");
         $(".losses").text(losses);
         userScore = 0;
+        targetScore = randomNum(19, 120);
+        $("#targetNumber").text(targetScore);
       }
     });
   }
