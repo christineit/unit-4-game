@@ -28,9 +28,11 @@ body {
   float: clear;
   margin: 50px;
 }
+#gem-container {
+  align-content: space-evenly;
+  justify-content: space-evenly;
+}
 .thumb {
-  display: block;
-  overflow: hidden;
   height: 200px;
   width: 200px;
   margin: 10px;

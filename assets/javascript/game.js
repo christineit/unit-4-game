@@ -31,6 +31,7 @@ $(document).ready(function() {
   // Created a crystalValues functions to assign to each of the crystals in the thumb class div.  Then, we create a variable value to call the randomNum generator for the crystals with the arguments 1 to 12.  We get the variable value to assign to the divs by creating an attr data-crystal-value and assigning variable value to it.
   function crystalValues() {
     $(".thumb").each(function() {
+      //.each iterates
       var value = randomNum(1, 12);
       // console.log("????");
       // console.log(value);
